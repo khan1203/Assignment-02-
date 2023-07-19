@@ -106,7 +106,6 @@ header {
 }
 
 .bannar-pic {
-    /* border: 1px solid rgb(255, 3, 255); */
     width: 45%;
 }
 
@@ -115,7 +114,6 @@ header {
 }
 
 .bannar .bannar-text {
-    /* border: 1px solid crimson; */
     width: 48%;
     align-items: center;
     justify-content: center;
@@ -195,11 +193,12 @@ header {
 }
 
 /* -----mobile bannar------- */
+
+
 @media screen and (max-width:425px) {
     .bannar {
         display: flex;
         flex-direction: column-reverse;
-        /* border: 3px solid black; */
 
     }
 
@@ -233,6 +232,30 @@ header {
         font-size: 10px;
         padding: 10px 20px;
     }
+}
+
+/* -----------Tablet bannar------ */
+@media screen and (min-width:600px) and (max-width:768px) {
+    .bannar-text h2 {
+        margin-top: 90px;
+        font-size: 1.3rem;
+    }
+
+    .bannar-text h1 {
+        font-size: 52px;
+    }
+    .bannar-text p {
+        font-size: 10px;
+        width: 45%;
+    }
+    .btn {
+        width: 55%;
+    }
+    .btn-primary {
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+
 }
 
 /* -----------Online games----------- */
