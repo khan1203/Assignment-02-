@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Open+Sans:wght@800&family=Space+Mono:wght@700&family=Work+Sans:wght@100;400;600;800&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Work Sans', sans-serif;
+}
+
+span {
+    color: #FF42A5;
+}
+
+header {
+    margin-top: 0rem;
+    /* border: 3px solid black; */
+}
+
+/* ----------------Nav-bar----------------- */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name h3 {
+    font-size: 30px;
+}
+
+.name img {
+    height: fit-content;
+    margin-left: 2rem;
+    /* padding-bottom: -6px; */
+}
+
+.nav-btn>ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 12px;
+
+}
+
+.nav-btn ul li {
+    padding: 6px 10px;
+    align-items: first baseline;
+}
+
+.nav-btn ul li a {
+    color: rgb(77, 77, 77);
+    font-weight: 450;
+    text-decoration: none;
+}
+
+.nav-btn ul .follow {
+    background-color: rgba(128, 128, 128, 0.37);
+    border-radius: 8px;
+}
+
+.nav-btn ul .follow img {
+    padding-left: 10px;
+    max-height: 21px;
+    max-width: 21px;
+}
+
+/* ------------------Mobile nav---------- */
+@media screen and (max-width:425px) {
+    .nav {
+        display: grid;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .nav-btn li {
+        text-align: center;
+    }
+
+    .nav-btn ul {
+        display: grid;
+    }
+
+}
+
+/* -------------Tablet nav---------------- */
+@media screen and (min-width:600px) and (max-width:768px) {
+    .nav-btn {
+        padding-top: 12px;
+    }
+}
+
+
+/* ------------------Bannar--------------------- */
+
+.bannar {
+    display: flex;
+
+}
+
+.bannar-pic {
+    /* border: 1px solid rgb(255, 3, 255); */
+    width: 45%;
+}
+
+.bannar-pic img {
+    width: 100%;
+}
+
+.bannar .bannar-text {
+    /* border: 1px solid crimson; */
+    width: 48%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.bannar-text h2 {
+    color: #0B0223;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.bannar-text h1 {
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 105px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0px auto;
+}
+
+.bannar-text p {
+    color: #534C64;
+    text-align: left;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: lowercase;
+    width: 50%;
+    margin: auto;
+}
+
+/* -------button-------- */
+.btn {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.btn-primary {
+    border: none;
+    display: inline-flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 48px;
+    font-family: Work Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#btn-sign-in {
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    color: #FFF;
+}
+
+#btn-go {
+    background: #4EC5F7;
+    color: white;
+}
+
+/* -----mobile bannar------- */
+@media screen and (max-width:425px) {
+    .bannar {
+        display: flex;
+        flex-direction: column-reverse;
+        /* border: 3px solid black; */
+
+    }
+
+    .bannar-pic {
+        width: 100%;
+    }
+
+    .bannar .bannar-text {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .bannar-text h2 {
+        font-size: large;
+    }
+
+    .bannar-text h1 {
+        font-size: 48px;
+    }
+
+    .bannar-text p {
+        font-size: 10px;
+        width: 40%;
+    }
+
+    .btn {
+        width: 45%;
+    }
+
+    .btn-primary {
+        font-size: 10px;
+        padding: 10px 20px;
+    }
+}
+
+/* -----------Online games----------- */
+.main {
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid darkgoldenrod; */
+}
+
+.game-text {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.game-text h2 {
+    color: #0B0223;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.game-text h2 span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.game-text p {
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+}
+
+.online-game {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    width: 80%;
+    margin: auto;
+    /* border: 2px solid tomato; */
+    padding: 60px 0;
+}
+
+.online-game .cards {
+    justify-content: space-around;
+    /* border: 3px solid rgb(255, 6, 6); */
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+}
+
+.cards>p {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+/* ------Mobile online game-------- */
+
+@media screen and (max-width:426px) {
+    .online-game {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        width: 60%;
+        margin: auto;
+        padding: 60px 0;
+        /* border: 2px solid tomato; */
+    }
+
+    .game-text {
+        width: 80%;
+    }
+
+    .game-text h2 {
+        margin: 30px auto 8px;
+    }
+
+    .game-text p {
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+}
+
+/* ----------gameplay---------- */
+.gameplay{
+    /* border: 2px solid red; */
+    display: flex;
+    margin: 120px 0;
+    width: 100%;
+    
+}
+
+.gameplay-text{
+    /* border: 2px solid orangered; */
+    width: 50%;
+    padding: 80px 120px;
+}
+
+.gameplay-text h2{
+    font-size: 38px;
+}
+
+.gameplay p{
+    width: 400px;
+}
+
+.gameplay-pic{
+    /* border: 2px solid darkorange; */
+    display: flex;
+    position: relative;
+    width: 50%;
+}
+
+.gameplay-pic .main-img{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+    
+}
+
+.gameplay-pic .op-img{
+    position: absolute;
+    width: 45%;
+    top: 320px;
+    left: -70px;
+}
+
+/* ----------Mobile Gameplay--------- */
+
+@media screen and (max-width:426px) {
+    .gameplay{
+        /* border: 2px solid red; */
+        display: flex;
+        margin: 30px 0;
+        width: 100%;
+        padding-bottom: 30px;
+        
+    }
+    
+    .gameplay-text{
+        /* border: 2px solid orangered; */
+        width: 50%;
+        padding: 15px 30px;
+    }
+
+    .gameplay-text h2{
+        font-size: 20px;
+    }
+
+    .gameplay p{
+        width: 150px;
+        font-size: 10px;
+    }
+    .gameplay-pic .op-img{
+        position: absolute;
+        width: 45%;
+        top: 120px;
+        left: -30px;
+    }
+}
+
+
+/* --------category------------- */
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+    /* border: 2px solid red; */
+}
+
+.cat {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 0 20px 0px 3px;
+    border-radius: 40px;
+    transition: transform 1s ease-in-out;
+}
+
+.cat:hover {
+    border: 2px solid #FF42A5;
+    color: #F948B2;
+    font-weight: 800;
+    transition: transform 1s ease-in-out;
+}
+
+.cat > img{
+
+}
+
+.cat > h4 {
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+/* -----------Mobile Category------- */
+@media screen and (max-width:426px) {
+    .cat {
+        display: flex;
+        padding: 0 10px 0px 2px;
+        border-radius: 40px;
+        transition: transform 1s ease-in-out;
+    }
+    
+    .cat>h4 {
+        font-size: 10px;
+        font-weight: 400;
+        padding-left: 10px;
+    }
+
+    .cat > img{
+        width: 32px;
+        height: 32px;
+    }
+    
+}
+
+
+/*------------Footer----------- */
+
+.footer {
+    background-color: #0B0223;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0px 0px 0px ;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 76.041px;
+    height: 35px;
+    flex-shrink: 0;
+}
+
+.logo h2 {
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 45px;
+    font-weight: 700;
+    color: white;
+}
+
+.option {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    width: 60%;
+    height: 10vh;
+    margin: auto;
+
+}
+
+.option p {
+    margin: auto;
+}
+
+.option>p>a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.footer .icons {
+    width: 15%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+    gap: 30px;
+}
+
+.footer .icons img {
+    color: rgb(202, 202, 202);
+    width: 24px;
+    height: 24px;
+}
+
+.policy {
+    display: flex;
+    gap: 20px;
+    color: rgb(130, 130, 130);
+    font-size: 16px;
+    text-align: center;
+    width: 48%;
+    margin: 0 auto;
+    padding: 0px 0;
+}
+
+.copyright {
+    color: #534c64a1;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+/* -------Mobile Footer------ */
+
+@media screen and (max-width:426px) {
+    .logo img {
+        width: 56.041px;
+        height: 25px;
+        flex-shrink: 0;
+    }
+
+    .logo h2 {
+        text-align: center;
+        font-family: Work Sans;
+        font-size: 25px;
+        font-weight: 700;
+        color: white;
+    }
+
+    .option {
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 90%;
+        margin: auto;
+
+    }
+
+    .option>p>a {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+    }
+
+    .footer .icons {
+        width: 37%;
+    }
+
+    .policy {
+        display: flex;
+        gap: 20px;
+        color: rgb(130, 130, 130);
+        font-size: 10px;
+        text-align: center;
+        width: 58%;
+        margin: 0 auto;
+        padding: 0px 0;
+    }
+
+    .copyright {
+        font-size: 10px;
+
+    }
+}
