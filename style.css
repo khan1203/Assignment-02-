@@ -440,7 +440,7 @@ header {
 @media screen and (max-width:426px) {
     .gameplay{
         /* border: 2px solid red; */
-        display: flex;
+        display: grid;
         margin: 30px 0;
         width: 100%;
         padding-bottom: 30px;
@@ -449,23 +449,43 @@ header {
     
     .gameplay-text{
         /* border: 2px solid orangered; */
-        width: 50%;
-        padding: 15px 30px;
+        width: 100%;
+        padding: 15px 0px;
     }
 
     .gameplay-text h2{
         font-size: 20px;
+        text-align: center;
     }
 
     .gameplay p{
         width: 150px;
         font-size: 10px;
+        text-align: center;
+        margin: auto;
     }
+
+    .gameplay-pic{
+        /* border: 2px solid darkorange; */
+        display: flex;
+        position: relative;
+        width: 100%;
+    }
+    
+    .gameplay-pic .main-img{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        width: 60%;
+        margin: auto;
+        
+    }
+
     .gameplay-pic .op-img{
         position: absolute;
-        width: 45%;
-        top: 120px;
-        left: -30px;
+        width: 25%;
+        top:170px;
+        left: 40px;
     }
 }
 
@@ -476,29 +496,46 @@ header {
         display: flex;
         margin: 30px 0;
         width: 100%;
-        padding-bottom: 30px;
+        padding-bottom: 80px;
         
     }
     
     .gameplay-text{
         /* border: 2px solid orangered; */
         width: 50%;
-        padding: 15px 30px;
+        padding: 15px 0px 0 50px;
     }
 
     .gameplay-text h2{
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .gameplay p{
         width: 150px;
         font-size: 10px;
     }
+    .gameplay-pic{
+        /* border: 2px solid darkorange; */
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        width: 100%;
+    }
+    
+    .gameplay-pic .main-img{
+        display: flex;
+       
+        position: relative;
+        width: 75%;
+        /* margin: auto; */
+        
+    }
+
     .gameplay-pic .op-img{
         position: absolute;
-        width: 45%;
-        top: 120px;
-        left: -30px;
+        width: 33%;
+        top: 220px;
+        left: 70px;
     }
 }
 
@@ -704,5 +741,12 @@ header {
     .copyright {
         font-size: 10px;
 
+    }
+}
+
+/* -----------Tablet Footer---------- */
+@media screen and (min-width:600px) and (max-width:768px) {
+    .footer .icons {
+        width: 20%;
     }
 }
